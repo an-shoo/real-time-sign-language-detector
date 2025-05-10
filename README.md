@@ -48,10 +48,6 @@
   <img src="images/screenshot1.png" width="600" alt="Real-time detection showing predicted gesture">
 </p>
 
-### 🖼️ Bounding Box Labeling Example
-<p align="center">
-  <img src="images/detection_example.jpg" width="600" alt="Labeled dataset example with bounding boxes">
-</p>
 
 ## Contributing
 
