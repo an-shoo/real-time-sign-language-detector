@@ -24,15 +24,9 @@
     pip install -r requirements.txt
     ```
 
-3. **Download the pre-trained model:**
-    Download the SSD MobileNet model from TensorFlow's model zoo and place it in the `models/` directory.
-
-4. **Run the app:**
-    ```bash
-    python detect_sign_language.py
-    ```
-
-    This will start the webcam feed where the trained model will detect and classify the gestures in real time.
+3. **Follow this tutorial to set up the project (Highly Recommended):**  
+    👉 [YouTube - Real-Time Sign Language Detection with TensorFlow](https://youtu.be/pDXdlXlaCco?si=d7hXWSyMkA9gFauN)  
+    This video walks through the setup, training, and implementation of the real-time sign language detector, and served as the main reference for this project.
 
 ## Usage
 
