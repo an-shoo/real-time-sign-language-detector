@@ -10,6 +10,10 @@
 - **Labeling Tool**: Use the [LabelImg tool](https://github.com/tzutalin/labelImg) for manually labeling the dataset with bounding boxes.
 - **TensorFlow Object Detection API**: Leverages TensorFlow's state-of-the-art object detection framework for training and inference.
 
+
+## HIGHLY SUGGEST SETTING UP A VIRTUAL ENVIRONMENT FIRST AS THE DEPENDENCIES MAY CONFLICT WITH YOUR SYSTEM
+
+
 ## Installation
 
 1. **Clone the repository:**
