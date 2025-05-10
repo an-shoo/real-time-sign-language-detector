@@ -36,7 +36,7 @@
 
 - **Real-Time Detection**: Open the webcam feed by running the detection script. The model will display the detected gesture and output the class label in real time.
 - **Labeling Dataset**: Use the [LabelImg tool](https://github.com/tzutalin/labelImg) to label the images with bounding boxes for each gesture. The labeled data will be used to train the model.
-- **Training the Model**: Fine-tune the SSD MobileNet model on your labeled dataset using the training script (`train_model.py`).
+- **Training the Model**: Fine-tune the SSD MobileNet model on your labeled dataset using the training script in the Mainn jupyter notebook.
 - **Webcam Feed**: The real-time detection script will open your webcam, and the model will attempt to recognize the sign language gestures.
 
 ## Screenshots
