@@ -1,49 +1,68 @@
-# real-time-sign-language-detector
-This project is a real-time sign language gesture detection system using Python, OpenCV for image capture, and TensorFlow's Object Detection API. It leverages Transfer Learning with a pre-trained SSD MobileNet model to detect and classify five specific sign language gestures.
+# Real-Time Sign Language Detector
 
-Features
-Real-Time Detection: Detects and classifies sign language gestures using webcam input.
+**Real-Time Sign Language Detector** is a versatile Python application designed to detect and translate sign language gestures in real-time. The app uses **TensorFlow Object Detection API**, **OpenCV** for image capture, and **Transfer Learning** with a pre-trained SSD MobileNet model for efficient and accurate sign language gesture recognition.
 
-Gesture Set: Detects five sign language gestures: "Hello", "Yes", "No", "Thank You", and "I Love You".
+## Features
 
-Transfer Learning: Utilizes transfer learning with the SSD MobileNet model for efficient and accurate detection.
+- **Real-Time Detection**: Detect and classify sign language gestures from the webcam in real time.
+- **Gesture Set**: Recognize five specific sign language gestures: "Hello", "Yes", "No", "Thank You", and "I Love You".
+- **Transfer Learning**: The model is fine-tuned using transfer learning on a pre-trained SSD MobileNet model to detect gestures efficiently.
+- **Labeling Tool**: Use the [LabelImg tool](https://github.com/tzutalin/labelImg) for manually labeling the dataset with bounding boxes.
+- **TensorFlow Object Detection API**: Leverages TensorFlow's state-of-the-art object detection framework for training and inference.
 
-Technologies Used
-Python: Programming language for implementation.
+## Installation
 
-OpenCV: For capturing real-time images from the webcam.
+1. **Clone the repository:**
+    ```bash
+    git clone https://github.com/yourusername/sign-language-detector.git
+    cd sign-language-detector
+    ```
 
-TensorFlow Object Detection API: For model training and inference.
+2. **Install dependencies:**
+    Make sure you have Python 3.x installed, then install the required libraries:
+    ```bash
+    pip install -r requirements.txt
+    ```
 
-SSD MobileNet: A pre-trained model used with transfer learning to detect objects (sign language gestures).
+3. **Download the pre-trained model:**
+    Download the SSD MobileNet model from TensorFlow's model zoo and place it in the `models/` directory.
 
-LabelImg: Tool used for labeling the dataset with bounding boxes.
+4. **Run the app:**
+    ```bash
+    python detect_sign_language.py
+    ```
 
-Setup Instructions
-Prerequisites:
-Python 3.x installed on your system.
+    This will start the webcam feed where the trained model will detect and classify the gestures in real time.
 
-Basic knowledge of Python and TensorFlow.
+## Usage
 
-Webcam for real-time detection.
+- **Real-Time Detection**: Open the webcam feed by running the detection script. The model will display the detected gesture and output the class label in real time.
+- **Labeling Dataset**: Use the [LabelImg tool](https://github.com/tzutalin/labelImg) to label the images with bounding boxes for each gesture. The labeled data will be used to train the model.
+- **Training the Model**: Fine-tune the SSD MobileNet model on your labeled dataset using the training script (`train_model.py`).
+- **Webcam Feed**: The real-time detection script will open your webcam, and the model will attempt to recognize the sign language gestures.
 
-Dataset:
-The dataset consists of images of five sign language gestures, captured using the webcam.
+## Screenshots
 
-Labeling the dataset is done manually using the LabelImg tool.
+### 🖼️ Real-Time Detection in Action
+<p align="center">
+  <img src="images/screenshot1.png" width="600" alt="Real-time detection showing predicted gesture">
+</p>
 
-Model Training:
-Prepare the dataset: Capture and label the images using LabelImg.
+### 🖼️ Bounding Box Labeling Example
+<p align="center">
+  <img src="images/detection_example.jpg" width="600" alt="Labeled dataset example with bounding boxes">
+</p>
 
-Train the model: Use transfer learning with the pre-trained SSD MobileNet model from TensorFlow.
+## Contributing
 
-Follow the steps in the TensorFlow Object Detection API tutorial for fine-tuning the model on your labeled dataset.
+Contributions are welcome! If you have any suggestions, bug fixes, or improvements, feel free to create a pull request or open an issue in the repository.
 
-Real-Time Detection:
-To run the real-time detection script:
+## Acknowledgements
 
-bash
-Copy
-Edit
-python detect_sign_language.py
-This will start a webcam feed where the trained model will detect and classify the gestures in real time.
+- This project was developed for educational purposes as part of a real-time sign language detection application.
+- Special thanks to the TensorFlow community for the Object Detection API and SSD MobileNet model.
+- Thanks to the [LabelImg tool](https://github.com/tzutalin/labelImg) for helping with dataset labeling.
+
+---
+
+Feel free to reach out if you have any questions or want to contribute. Happy coding! 🖐️
